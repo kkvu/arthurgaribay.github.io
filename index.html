@@ -1,3 +1,43 @@
-Hello World!
-Test123
-<img src="/img/LOROPIANA_1.10.2.png">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arthur Garibay</title>
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Playfair+Display">
+    </head>
+    <body align="center" margin="0" style="background-color:black; margin: 0px">
+        <script>
+            function changeText()
+            {
+             document.getElementById('name').innerHTML = 'arthur@arthurgaribay.com';
+             document.getElementById('title').innerHTML = '';
+             document.getElementById('icon')
+                .style.display = "block";
+            }
+            </script>
+
+
+        <div class="content">
+            <video autoplay muted loop id="myVideo" width="100%" height="auto" margin:"auto">
+                <source src="https://assets.frame.io/encode/240664e5-cb17-4bd3-a029-cbb2eb527984/h264_1080_best.mp4?x-amz-meta-project_id=58e56884-d682-4d3d-9808-b302c8d310a0&x-amz-meta-request_id=F3WiK12z8NuCxGkDtwCB&x-amz-meta-project_id=58e56884-d682-4d3d-9808-b302c8d310a0&x-amz-meta-resource_type=asset&x-amz-meta-resource_id=240664e5-cb17-4bd3-a029-cbb2eb527984&Expires=1690502400&Signature=fW80WuWHmYfhhDyGyUEPClAF8xzwxOuyAWHtIPEeBDfWnatPTtuYBTO58ldiRWom3amrL3iWVXm4sy-JwhclyRsujU6o8Vaz68-a6C0MQdZKHAefFITMbIAEJe3tv0mFxmxux~9B5M8I1TZa7Tg3ipnA7lMbpGLf1AeehE2lcoWvix0Ej8ANi77u5bRr7ISOHJ-4MvJwEqbYBW2F~jPIluQpsG68B16kSS-2u~Horz8oHCk5MpXV0QjMKz811zvUuqI020WAkMC9gjAFWa3EtYbXrh-KigAieXQX2QZzNG2HCz9FG7NkZDZY92yIHuqcTCkkSqk9AlpefmH7k-X~wA__&Key-Pair-Id=K1XW5DOJMY1ET9" type="video/mp4">
+              </video>
+              <div class="menu">
+                <span style="color:white; 
+                font-family: 'Josefin Sans', serif; " onclick='changeText()'>CONTACT</span>
+              </div>
+            <div class="header">
+                <span style="color:white; font-weight: bold;
+                font-family: 'Josefin Sans', serif; font-size: 20px;" id="name">ARTHUR GARIBAY</span>        <br>
+            <span style="color:white; 
+            font-family: 'Playfair Display', serif; font-style: italic;" id="title">COLORIST</span>
+        <a href="https://www.instagram.com/arthurgaribay/"> <img id="icon" width="20px" style="display: none; margin: auto; cursor: pointer"
+        src="img/insta.png"
+        alt="GFG image" /></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
+    height: 100vh; /* 100% of the viewport height */
+ }
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    /* position: fixed;
+    right: 0;
+    bottom: 0; */
+    /* background-size:100% auto; */
+    /* /* min-width: 100%; */
+    min-height: 50%;
+  }
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: black;
+    overflow: hidden;
+    
+    overflow-y: hidden !important;
+  }
+
+.header{
+    position: absolute; /* taken out of the normal flow of the document */
+    top: 50%; /* moved down by 50% of the screen height */
+    transform: translateY(-65%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+    width: 100%; /* needs to be defined to keep the default block behavior */
+    text-align: center;
+    margin: 0; /* again, for perfect center */
+    color: aliceblue;;
+    width: 100%;
+
+}
+
+.menu{
+    position: absolute; /* taken out of the normal flow of the document */
+    top: 5%; /* moved down by 50% of the screen height */
+    right: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}

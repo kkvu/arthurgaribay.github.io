@@ -1,0 +1,29 @@
+{
+  "name": "arthur-website",
+  "version": "1.0.0",
+  "author": "Kelly Vu <kvu.1121@gmail.com>",
+  "scripts": {
+    "start": "http-server"
+  },
+  "description": "arthur's website",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkvu/kkvu.github.io.git"
+  },
+  "keywords": [
+    "colorist",
+    "austin",
+    "editor",
+    "arthur",
+    "garibay"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkvu/kkvu.github.io/issues"
+  },
+  "homepage": "https://github.com/kkvu/kkvu.github.io#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
