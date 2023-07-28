@@ -8,8 +8,8 @@ body {
     height: 100vh; /* 100% of the viewport height */
  }
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
+ @media (min-width:1281px) { /* hi-res laptops and desktops */ 
+  #myVideo {
     /* position: fixed; */
     /* right: 0;
     bottom: 0; */
@@ -18,49 +18,59 @@ body {
     min-height: 50%;
   }
 
-.content {
+  .header{
+    position: absolute; /* taken out of the normal flow of the document */
+      top: 50%; /* moved down by 50% of the screen height */
+      transform: translateY(-65%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+      width: 100%; /* needs to be defined to keep the default block behavior */
+      text-align: center;
+      margin: 0; /* again, for perfect center */
+      width: 100%;
+  
+  }
+  
+  .menu{
+      position: absolute; /* taken out of the normal flow of the document */
+      top: 2%; /* moved down by 50% of the screen height */
+      right: 25px;
+      cursor: pointer;    
+      font-size: 1em;
+  }
+
+  .content {
     position: relative;
     text-align: center;
     color: white;
     background-color: black;
-    overflow: hidden;
-    
+    overflow: hidden;  
     overflow-y: hidden !important;
   }
-
-.header{
-  position: absolute; /* taken out of the normal flow of the document */
-    top: 50%; /* moved down by 50% of the screen height */
-    transform: translateY(-65%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-    width: 100%; /* needs to be defined to keep the default block behavior */
-    text-align: center;
-    margin: 0; /* again, for perfect center */
-    color: aliceblue;;
-    width: 100%;
-
-}
-
-.menu{
-    position: absolute; /* taken out of the normal flow of the document */
-    top: 2%; /* moved down by 50% of the screen height */
-    right: 25px;
-    color: aliceblue;
-    cursor: pointer;
-    
-    font-size: 1em;
 }
 
 
-
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+@media (max-aspect-ratio: 16/9)  { /* smartphones, Android phones, landscape iPhone */ 
   #myVideo {
-    /* position: fixed; */
-    /* right: 0;
-    bottom: 0; */
-    /* background-size:100% auto; */
-    /* /* min-width: 100%; */
+    position: fixed;
+    top: 0;
+    left: -1113px;
     min-height: 100vh;
+    z-index: -5;
   }
 
+  .menu{
+    text-align: right;
+    padding: 20px;
+}
 
+.header{
+    padding-top: 60%;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;  
+  overflow-y: hidden !important;
+}
 }
