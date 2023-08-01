@@ -15,19 +15,18 @@ body {
 
   .header{
     position: absolute; /* taken out of the normal flow of the document */
-      top: 60vh; /* moved down by 50% of the screen height */
+      top: 49%; /* moved down by 50% of the screen height */
       transform: translateY(-65%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
       width: 100%; /* needs to be defined to keep the default block behavior */
       text-align: center;
       margin: 0; /* again, for perfect center */
-      width: 100%;
   
   }
   
   .menu{
       position: absolute; /* taken out of the normal flow of the document */
       top: 2%; /* moved down by 50% of the screen height */
-      right: 25px;
+      right: 35px;
       cursor: pointer;    
       font-size: 1em;
   }
@@ -54,15 +53,15 @@ body {
 
   .menu{
     text-align: right;
-    padding: 20px 50px;
-    top: 10px;
+    padding: 20px 30px;
+    top: 0px;
     right: 0px;
     position: absolute;
 }
 
 .header{
   position: absolute;
-  top: 50%;
+  top: 49%;
     width: 100%;
 }
 
